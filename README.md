@@ -1,6 +1,6 @@
 # Estructura del dataset
 
-El dataset a usar fue generado de manera sintética con el Generado de Programas PreDeLP (DPG) y computando el valor de todas las métricas para cada programa, junto con el tiempo promedio para responder todos los literales del programa. Cada fila del dataset representa:
+El dataset a usar fue generado de manera sintética con el Generado de Programas PreDeLP [DPG](https://github.com/marioa-l/DeLP-Gen.git) y computando el valor de todas las métricas para cada programa, junto con el tiempo promedio para responder todos los literales del programa. Cada fila del dataset representa:
 
 - Un programa PreDeLP.
 - El conjunto de parámetros con los que fue generado el programa:
