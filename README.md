@@ -1,6 +1,20 @@
-# Estructura del dataset
+# Estimación de Métricas de Estructura y Complejidad de Programas Lógicos Rebatibles
 
-El dataset a usar fue generado de manera sintética con el Generado de Programas PreDeLP [DPG](https://github.com/marioa-l/DeLP-Gen.git) y computando el valor de todas las métricas para cada programa, junto con el tiempo promedio para responder todos los literales del programa. Cada fila del dataset representa:
+## Proyecto Final de la Especialización en Ciencias de Datos 2022
+
+En este proyecto se usaron clasificadores y autoencoders con el objetivo
+de hacer escalable el proceso de generar y evaluar valores de parámetros que
+sirven para generar programas PreDeLP con DPG. Para hacer escalable el
+proceso de evaluar valores de parámetros, se definió y entrenó un conjun-
+to de clasificadores dando como resultado un clasificador SVC con valores
+de métricas aceptables. Para escalar el proceso de generación de valores de
+parámetros que permitan construir programas PreDeLP fáciles o difı́ciles
+según el tiempo de respuesta a consultas, se utilizaron dos tipos de autoen-
+coders, uno que aprende en base al conjunto de todos los parámetros a la
+vez, y otro que aprender la distribución de valores de cada parámetro por
+separado.
+
+El dataset usado fue generado de manera sintética con el Generado de Programas PreDeLP [DPG](https://github.com/marioa-l/DeLP-Gen.git) y computando el valor de todas las métricas para cada programa, junto con el tiempo promedio para responder todos los literales del programa. Cada fila del dataset representa:
 
 - Un programa PreDeLP.
 - El conjunto de parámetros con los que fue generado el programa:
@@ -9,7 +23,7 @@ El dataset a usar fue generado de manera sintética con el Generado de Programas
 	- $\mathtt{NRU, NBE, NAR, NDT, ALE, AWI, AHE}$.
 - El tiempo promedio para responder el estado de todos los literales del programa: $\mathtt{Time}$.
 
-El mismo contiene los datos de **32000** programas. También es importante remarcar que se tiene acceso a los programas generados en sí, es decir, al conjunto de reglas que lo componen, esto nos permitiría hacer un análisis sintáctico de la estructura de cada regla en busca de algún patrón que nos permita predecir la complejidad del programa sin computar sus métricas.
+El mismo contiene los datos de **32000** programas. Su estructura es la siguiente:
 
 |Id                |Significado                          |Tipo                         |
 |----------------|-------------------------------|-----------------------------|
@@ -31,3 +45,5 @@ El mismo contiene los datos de **32000** programas. También es importante remar
 |`AWI`|Ancho promedio de los árboles de dialéctica            |`double`            |
 |`AHE`|Altura promedio de los árboles de dialéctica            |`double`            |
 |`Time`|Tiempo promedio para consultar por todos los literales            |`double`            |
+
+En este repositorio se encuentran disponible la notebook del proyecto, el conjunto de datos y los archivos con los resultados de las evaluaciones.
