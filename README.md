@@ -2,17 +2,7 @@
 
 ## Proyecto Final de la Especialización en Ciencias de Datos 2022
 
-En este proyecto se usaron clasificadores y autoencoders con el objetivo
-de hacer escalable el proceso de generar y evaluar valores de parámetros que
-sirven para generar programas PreDeLP con DPG. Para hacer escalable el
-proceso de evaluar valores de parámetros, se definió y entrenó un conjun-
-to de clasificadores dando como resultado un clasificador SVC con valores
-de métricas aceptables. Para escalar el proceso de generación de valores de
-parámetros que permitan construir programas PreDeLP fáciles o difı́ciles
-según el tiempo de respuesta a consultas, se utilizaron dos tipos de autoen-
-coders, uno que aprende en base al conjunto de todos los parámetros a la
-vez, y otro que aprender la distribución de valores de cada parámetro por
-separado.
+En este proyecto se usaron clasificadores y autoencoders con el objetivo de hacer escalable el proceso de generar y evaluar valores de parámetros que sirven para generar programas PreDeLP con DPG. Para hacer escalable el proceso de evaluar valores de parámetros, se definió y entrenó un conjunto de clasificadores dando como resultado un clasificador SVC con valores de métricas aceptables. Para escalar el proceso de generación de valores de parámetros que permitan construir programas PreDeLP fáciles o difı́ciles según el tiempo de respuesta a consultas, se utilizaron dos tipos de autoencoders, uno que aprende en base al conjunto de todos los parámetros a la vez, y otro que aprender la distribución de valores de cada parámetro por separado.
 
 El dataset usado fue generado de manera sintética con el Generado de Programas PreDeLP [DPG](https://github.com/marioa-l/DeLP-Gen.git) y computando el valor de todas las métricas para cada programa, junto con el tiempo promedio para responder todos los literales del programa. Cada fila del dataset representa:
 
